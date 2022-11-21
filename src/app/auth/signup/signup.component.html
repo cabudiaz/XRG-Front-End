@@ -1,0 +1,32 @@
+<h5>Registrarse</h5>
+
+<div class="row">
+    <form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre completo</mat-label>
+                <input matInput placeholder="Nombre y Apellido" value="" formControlName="fullName">
+                <mat-error> Se quiere el nombre completo</mat-error>
+              </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="example-full-width">
+                <mat-label>E mail</mat-label>
+                <input matInput placeholder="demo@correo.com" value="" formControlName="email">
+              </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput placeholder="" value="" formControlName="password">
+              </mat-form-field>
+        </div>
+        <button mat-raised-button color="primary">Primary</button>
+        
+      
+        
+      </form>
+      
+</div>
