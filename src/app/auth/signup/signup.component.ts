@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/_services/auth.service';
 
 @Component({
@@ -10,37 +11,38 @@ import { AuthService } from 'src/app/_services/auth.service';
 export class SignupComponent implements OnInit {
 
   constructor(
-    private fb: FormBuilder, private authService:AuthService) { }
+    private fb: FormBuilder, private authService: AuthService, private router: Router) { }
 
-    form = this.fb.group ({
-      fullName:['', Validators.required],
-      email:['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
+  form = this.fb.group({
+    fullName: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', Validators.required]
 
-    })
+  })
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   onSubmit(): void {
     if (this.form.valid) {
       console.log("Form Valido");
       console.log(this.form.value);
-       this.authService.signup(this.form.value).subscribe({
-        next: data =>{
-          console.log(data);          
+      this.authService.signup(this.form.value).subscribe({
+        next: (data) => {
+          console.log(data);
+          this.router.navigate(['../login'])
         },
         error: err => {
           console.log(err);
-          
+
         }
-       });
+      });
     } else {
       console.log("Form Invalido");
-      
+
     }
-    
-    
-    
+
+
+
   }
 
 }

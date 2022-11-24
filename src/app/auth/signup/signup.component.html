@@ -1,4 +1,4 @@
-<h5>Registrarse</h5>
+<h5 class="font font-size-signup">Registrarse</h5>
 
 <div class="row">
     <form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -23,8 +23,9 @@
                 <input type="password" matInput placeholder="" value="" formControlName="password">
               </mat-form-field>
         </div>
-        <button mat-raised-button color="primary">Primary</button>
-        
+        <div class="d-flex justify-content-center mt-3">
+        <button class="d-flex justify-content-center font" mat-raised-button color="primary">Registrarse</button>
+      </div>
       
         
       </form>

@@ -1,5 +1,14 @@
 .fondo {
-    background-image: url('https://gestiona360.com.co/wp-content/uploads/2022/11/Fondo-Registro.jpg');
+    background-image: url('https://gestiona360.com.co/wp-content/uploads/2022/11/Fondo-Registro-2.jpg');
     max-height:100%;
     height:100vh;
+    background-size: cover;
+}
+
+.frame-auth {
+    border-radius: 5px;
+}
+
+.logo-inicio {
+    width: 200px;
 }

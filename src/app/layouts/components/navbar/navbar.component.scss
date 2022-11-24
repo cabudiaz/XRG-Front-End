@@ -27,6 +27,7 @@
     width: 40px;
     height: 40px;
     border-radius: 64px;
+    margin-top: -7px;
 }
 
 .height-nav-bar {
@@ -41,7 +42,26 @@
     background-color: transparent;
     border: none;
 }
-.color-fondo:active {
-    background-color: transparent;
-    border: none;
+.btn-check:focus + .btn-secondary, .btn-secondary:focus {
+    box-shadow: none;
+}
+
+/*username settings*/
+.user-name {
+    color: white;
+    background: rgb(39,189,211);
+    background: linear-gradient(315deg, rgba(39,189,211,1) 13%, rgba(186,0,230,1) 87%); 
+    padding: 15px 15px 14px 15px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Oxanium', cursive;
+}
+
+.dropdown-menu {
+    padding-top: 0px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -120px;
+    box-shadow: 3px 3px 6px 2px #16171c36;;
 }
