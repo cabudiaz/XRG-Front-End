@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate {
   constructor(
     private router: Router,
     private tokenService: TokenStorageService
-  ) {}
+  ) { }
 
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -27,8 +27,19 @@ export class AuthGuard implements CanActivate {
     | boolean
     | UrlTree {
     // console.log(this.tokenService.getUser());
-    if (this.tokenService.getUser()) {
-      return true;
+    if (window.sessionStorage.getItem('auth-token')) {
+      this.tokenService.verifyToken().subscribe({
+        next: (data) => {
+          console.log(data);
+          return true;
+        },
+        error: (error) => {
+          console.log(error);
+          this.router.navigate(['/login']);
+          return false;
+        }
+      })
+
     }
     this.router.navigate(['/login']);
     return false;

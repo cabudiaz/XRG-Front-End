@@ -9,7 +9,8 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
 import { NavbarComponent } from './layouts/components/navbar/navbar.component';
 import { FooterComponent } from './layouts/components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import {MatExpansionModule} from '@angular/material/expansion'; 
+import {MatExpansionModule} from '@angular/material/expansion';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'; 
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AuthLayoutComponent,
     NavbarComponent,
     FooterComponent,
+    PageNotFoundComponent,
     
   ],
   imports: [
