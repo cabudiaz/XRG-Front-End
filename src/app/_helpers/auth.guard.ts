@@ -25,9 +25,7 @@ export class AuthGuard implements CanActivate {
     | Observable<boolean | UrlTree>
     | Promise<boolean | UrlTree>
     | boolean
-    | UrlTree {
-    // console.log(this.tokenService.getUser());
-    if (window.sessionStorage.getItem('auth-token')) {
+    | UrlTree {   
       this.tokenService.verifyToken().subscribe({
         next: (data) => {
           console.log(data);
@@ -40,7 +38,7 @@ export class AuthGuard implements CanActivate {
         }
       })
 
-    }
+    
     this.router.navigate(['/login']);
     return false;
   }
