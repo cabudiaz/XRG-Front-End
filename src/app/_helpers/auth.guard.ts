@@ -25,18 +25,22 @@ export class AuthGuard implements CanActivate {
     | Observable<boolean | UrlTree>
     | Promise<boolean | UrlTree>
     | boolean
-    | UrlTree {   
-      this.tokenService.verifyToken().subscribe({
-        next: (data) => {
-          console.log(data);
-          return true;
-        },
-        error: (error) => {
-          console.log(error);
-          this.router.navigate(['/login']);
-          return false;
-        }
-      })
+    | UrlTree {  
+      return new Promise((resolve, reject)=>{
+        this.tokenService.verifyToken().subscribe({
+          next: (data) => {
+            resolve(true);
+          },
+          error: (error) => {
+            this.router.navigate(['/login']);
+            
+            
+          }
+        })
+        
+        
+      }) 
+      
 
     
     this.router.navigate(['/login']);
