@@ -29,7 +29,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HttpClientModule,
     MatExpansionModule,
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

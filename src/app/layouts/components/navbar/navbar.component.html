@@ -17,6 +17,8 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <p class="user-name">{{user.fullName}}</p>
+                      <li><a class="dropdown-item" (click)="fileInput.click()" href="#" >Cambiar foto</a></li>
+                      <input hidden #fileInput type="file" id="myFile" name="filename" (change)="changePhoto($event)" accept="image/*">  
                       <li><a class="dropdown-item" (click)="logout()" href="/login" >Cerrar sesión</a></li>
                      
                     </ul>

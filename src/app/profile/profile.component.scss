@@ -1,8 +1,45 @@
-.space-top {
+.profile-container p {
+    font-family: 'Oxanium', cursive;
+}
+
+.profile-container {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-image: url("/assets/img-profile/fondo-profile.jpg");
+    background-size: cover;
+    background-color: #1c1c1c;
+
 }
 .profile-photo-size {
-    width: 200px;
-    border-radius: 20px 0px;
+    width: 90px;
+    border-radius: 28px 28px;
+    margin-top: -10px;
+    border: 4px solid #2e2e2e;
 }
+
+.back-side {
+    background-color: #1c1c1c96;
+    box-shadow: 4px 4px 6px #00000096;
+    border-radius: 20px 20px;
+    border-top: 30px solid #00000038;
+}
+
+.user-profile {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.mini-card-profile {
+    background-color: #1c1c1c;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.title-mini-card-profile {
+    font-size: 10px;
+    color:#818181;
+}
+
+
+    
