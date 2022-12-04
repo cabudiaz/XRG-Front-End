@@ -14,6 +14,11 @@ export class AuthService {
     console.log(environment.apiUrl);
     return this.http.post(`${environment.apiUrl}/api/accounts/newAccount`, account);
   }
+
+  sendStravaData (dataClient:any){
+    return this.http.post(`${environment.apiUrl}/api/strava/updateDataStrava`, dataClient);
+  }
+
   login(account: any) {
     return this.http.post(`${environment.apiUrl}/api/auth/login`, account);
   }

@@ -1,0 +1,101 @@
+`<swiper
+[slidesPerView]="1"
+[spaceBetween]="10"
+[pagination]="{
+  clickable: true
+}"
+[breakpoints]="{
+  '640': {
+    slidesPerView: 2,
+    spaceBetween: 20
+  },
+  '768': {
+    slidesPerView: 2,
+    spaceBetween: 10
+  },
+  '1024': {
+    slidesPerView: 3,
+    spaceBetween: 20
+  }
+}"
+class="mySwiper">
+
+<ng-template swiperSlide>
+<div class="first hero">
+  <img class="hero-profile-img" src="../assets/img-profile/challenge-1.jpg" alt="">
+  <div class="hero-description-bk"></div>
+  <div class="hero-logo">
+      <img src="https://www.jmrichardscycles.com/wp-content/uploads/Specialized_Logo-1024x1031.jpg" alt="">
+  </div>
+  <div class="hero-description">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <!-- <div class="hero-date">
+      <p>20.02.2019</p>
+  </div> -->
+  <div class="hero-btn">
+      <a mat-button (click)="openDialog()">Ver más</a>
+  </div>
+</div>  
+</ng-template>
+
+<ng-template swiperSlide>
+    <div class="first hero">
+      <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+      <div class="hero-description-bk"></div>
+      <div class="hero-logo">
+          <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+      </div>
+      <div class="hero-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <!-- <div class="hero-date">
+          <p>20.02.2019</p>
+      </div> -->
+      <div class="hero-btn">
+        <a mat-button (click)="openDialog()">Ver más</a>
+      </div>
+    </div>  
+    </ng-template>
+
+    <ng-template swiperSlide>
+        <div class="first hero">
+          <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+          <div class="hero-description-bk"></div>
+          <div class="hero-logo">
+              <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+          </div>
+          <div class="hero-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <!-- <div class="hero-date">
+              <p>20.02.2019</p>
+          </div> -->
+          <div class="hero-btn">
+            <a mat-button (click)="openDialog()">Ver más</a>
+          </div>
+        </div>  
+        </ng-template>
+
+        <ng-template swiperSlide>
+            <div class="first hero">
+              <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+              <div class="hero-description-bk"></div>
+              <div class="hero-logo">
+                  <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+              </div>
+              <div class="hero-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <!-- <div class="hero-date">
+                  <p>20.02.2019</p>
+              </div> -->
+              <div class="hero-btn">
+                <a mat-button (click)="openDialog()">Ver más</a>
+              </div>
+            </div>  
+            </ng-template>
+
+
+
+</swiper>

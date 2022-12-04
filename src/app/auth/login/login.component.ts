@@ -33,8 +33,11 @@ export class LoginComponent implements OnInit {
     if(this.form.valid) {
       this.authService.login(this.form.value).subscribe({
         next: (data:any) => {
+        
+          
           console.log(data.token);
           this.tokenService.saveToken(data.token)
+
           this.router.navigate(['/'])
         },
         error: (err) => {

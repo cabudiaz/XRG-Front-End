@@ -13,11 +13,11 @@
                     
                     
                     <button class="btn btn-secondary dropdown-toggle color-fondo" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="icono-perfil" src="https://gestiona360.com.co/wp-content/uploads/2022/11/Foto-Perfil.jpg" alt="..." >
+                        <img class="icono-perfil" src="profile?.photoProfile || defaultAvatar" alt="..." >
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <p class="user-name">{{user.fullName}}</p>
-                      <li><a class="dropdown-item" (click)="fileInput.click()" href="#" >Cambiar foto</a></li>
+                      <li><a class="dropdown-item" (click)="fileInput.click()">Cambiar foto</a></li>
                       <input hidden #fileInput type="file" id="myFile" name="filename" (change)="changePhoto($event)" accept="image/*">  
                       <li><a class="dropdown-item" (click)="logout()" href="/login" >Cerrar sesión</a></li>
                      

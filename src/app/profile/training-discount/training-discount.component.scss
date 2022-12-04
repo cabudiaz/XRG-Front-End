@@ -1,0 +1,128 @@
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*Tarjeta*/
+
+.hero {
+    display: inline-block;
+    position: relative;
+    /* width: 400px; */
+    min-width: 215px;
+    height: 350px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+}
+
+.hero-profile-img {
+    height: 70%;
+}
+
+.hero-description-bk {
+    background-image: linear-gradient(0deg, #0094d4, #da23e3);
+    border-radius: 30px;
+    position: absolute;
+    top: 62%;
+    left: 8px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+}
+
+.second .hero-description-bk {
+    background-image: linear-gradient(-20deg, #bb7413, #e7d25c)
+}
+
+.hero-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 32%;
+    left: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.hero-logo img {
+    height: 100%;
+}
+
+.hero-description {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    left: 0px;
+    right: 0px;
+    bottom: 15%;
+    font-size: 12px;
+    font-family: 'Oxanium', cursive;
+}
+
+.hero-btn {
+    position: absolute;
+    color: #fff;
+    right: 64px;
+    bottom: 7%;
+    padding: 1px 20px;
+    border: 1px solid #fff;
+}
+
+.hero-btn a {
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.hero-date {
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    bottom: 10%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #eee;
+    min-height: 100vh;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -1px;
+    
+}

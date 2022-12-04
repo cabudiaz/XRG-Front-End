@@ -11,6 +11,10 @@ import { FooterComponent } from './layouts/components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'; 
+import {MatDialogModule} from '@angular/material/dialog'; 
+import {MatButtonModule} from '@angular/material/button'; 
+
+
 
 @NgModule({
   declarations: [
@@ -28,6 +32,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserAnimationsModule,
     HttpClientModule,
     MatExpansionModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [
     

@@ -1,55 +1,37 @@
 <div class="profile-container">
 
     <div class="container">
-        <div class="row">
+        <div class="row ">
 
-            <div class="col-4 ps-4 pe-1 pb-4 back-side">
-                <div class="row">
-                    <div class="col-3 ">
-                        <img class="profile-photo-size" src="../assets/img-nav/Foto-Perfil.jpg" alt="">
-                    </div>
-
-                    <div class="col-9 ps-4">
-                        <p class="user-profile">Camilo Burbano</p>
-                        <p style="color:#818181;">Master</p>
-                        <div class="row mini-card-profile ms-1 pe-1">
-                            <div class="col-4">
-                                <div class="title-mini-card-profile">
-                                    <p>Experiencia</p> 
-                                </div>
-                                <div class="num-mini-card-profile">
-                                    111
-                                </div>
-
-                            </div>
-                            <div class="col-4">
-                                <div class="title-mini-card-profile">
-                                   <p>Calorias</p> 
-                                </div>
-                                <div class="num-mini-card-profile">
-                                    111
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="title-mini-card-profile">
-                                   <p>Route Cards</p> 
-                                </div>
-                                <div class="num-mini-card-profile">
-                                    111
-                               </div>  
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
+            <div class="col-11 col-md-5 col-lg-4 ps-3 pe-3 pb-1 back-side  ">
+                
+                <!-- Profile card -->     
+            <app-profile-card></app-profile-card>
+                <!-- Profile section -->
+            <div class="row">
+              
+                <app-performance></app-performance>
+               
 
             </div>
 
         </div>
-        <div class="col-8">
 
+        <div class="col-12 col-md-7 col-lg-8 ">
+          <div class="row">
+            <app-training-discount></app-training-discount>
+          </div>
+
+          <div class="row">
+            <app-routes-cards></app-routes-cards>
+          </div>
+                           
         </div>
+       
+              
+        </div>
+
+
 
     </div>
 

@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+
 import { TokenStorageService } from '../_services/token-storage.service';
+
+
+
 
 
 @Component({
@@ -8,13 +12,25 @@ import { TokenStorageService } from '../_services/token-storage.service';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+  
 
   constructor(
     private tokenService: TokenStorageService,
-  ) { }
+  ) {}
+  
 
   ngOnInit(): void {
   
+
   }
 
-}
+
+  
+
+
+
+  
+  
+  }
+
+

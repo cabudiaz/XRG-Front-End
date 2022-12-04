@@ -9,7 +9,9 @@ import { TokenStorageService } from 'src/app/_services/token-storage.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  user:any 
+  user:any; 
+  profile: any;
+  defaultAvatar: string = "https://as1.ftcdn.net/v2/jpg/03/53/11/00/1000_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg"
   constructor(
     private tokenService: TokenStorageService,
     private router: Router,
@@ -18,6 +20,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.user = this.tokenService.getUser();
+    this.getProfile()
     
   }
   logout(): void {
@@ -34,6 +37,7 @@ export class NavbarComponent implements OnInit {
     this.profileService.uploadPhotoProfile(formData).subscribe({
       next: (data)=> {
         console.log(data);
+        this.ngOnInit();
         
       },
       error: (error) => {
@@ -43,6 +47,18 @@ export class NavbarComponent implements OnInit {
     })
     
   }
-
+    getProfile () {
+      this.profileService.getProfile().subscribe ({
+        next:(response:any)=>{
+          this.profile = response.data
+         
+          
+        },
+        error:(error)=>{
+          console.log(error);
+          
+        }
+      })
+    }
 
 }

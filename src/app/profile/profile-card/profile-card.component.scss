@@ -1,0 +1,86 @@
+
+ p {
+    font-family: 'Oxanium', cursive;
+}
+/*Foto de perfil*/
+.profile-photo-size {
+    width: 90px;
+    border-radius: 28px 28px;
+    margin-top: -10px;
+    border: 4px solid #2e2e2e;
+}
+
+
+
+/*Nombre de usuario*/
+.user-profile {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 3px;
+}
+
+/*Fondo tarjeta profile 3col*/
+.mini-card-profile {
+    background-color: #2a2a2a7a;
+    width: 90%;
+    border-radius: 5px;
+}
+
+/*Ajustes titulos tarjeta 3 col*/
+.title-mini-card-profile {
+    font-size: 10px;
+    color: #818181;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.title-mini-card-profile p {
+    margin-bottom: 2px;
+}
+
+/*Color números tarjeta profile 3 col*/
+.num-mini-card-profile {
+    color: white;
+    text-align: center;
+}
+
+/*barras de progreso tarjeta profile*/
+.progress {
+    height: 5px;
+}
+
+/* .progress-bar {
+    background: rgb(39, 189, 211);
+    background: linear-gradient(315deg, rgb(39, 189, 211) 13%, rgb(186, 0, 230) 87%);
+
+
+} */
+
+
+.pink-color{
+
+    background-color: #f517ff;
+}
+.blue-color {
+
+    background-color: #00adf6;
+}
+
+.green-color {
+    background-color:#86ab2e ;
+}
+
+.title-card-progress {
+    font-size: 11px;
+    color: #818181;
+
+    margin-bottom: 4px;
+}
+
+.title-card-progress p {
+    margin-bottom: 1px;
+}
+
+g text {
+    color: white;
+}
