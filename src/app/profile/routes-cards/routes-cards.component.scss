@@ -1,8 +1,66 @@
+h2 {
+    font-family: 'Oxanium', cursive; 
+    color: white;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+h3  {
+    font-size: 18px;
+    padding-top: 70px;
+    padding-left: 25px;
+    color: white;
+    font-family: 'Oxanium', cursive;
+}
 .back-route-card {
     background-color: #1c1c1c96;
     box-shadow: 4px 4px 6px #00000096;
     border-radius: 20px 20px;
-    border-left: 15px solid #00000038;
-    margin: 50px auto;
-    padding: 30px;
+    border-top: 25px solid #00000038;
+    margin: 20px auto;
+    padding: 10px;
+    width: 95%;
+    font-family: 'Oxanium', cursive;
 }
+
+.route-card-image {
+    width: 160px;
+    border-radius: 15px;
+    margin-top: -20px;
+}
+.small-letter-white p {
+    font-size: 5px;
+    }
+
+.features-route p {
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+.features-route i {
+    color: #00acf4;
+    margin-right: 6px;
+    margin-left: 2px;
+    font-size: 14px;
+    
+}
+
+.best-time p {
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 0px;
+}
+
+.image-profile-routes {
+    width: 60px;
+    margin: 0 auto 5px auto;
+}
+
+.best-rider p {
+    font-size: 8px;
+    line-height: 13px;
+}
+           
