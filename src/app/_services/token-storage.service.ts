@@ -13,7 +13,7 @@ export class TokenStorageService {
 
   constructor(private http: HttpClient) { }
 
-  get getToken () {
+  get getToken() {
     return localStorage.getItem(TOKEN_KEY);
   }
 

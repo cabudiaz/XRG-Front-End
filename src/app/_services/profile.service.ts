@@ -14,11 +14,17 @@ export class ProfileService {
   constructor(private http: HttpClient, private tokenService: TokenStorageService) { }
 
   uploadPhotoProfile (photoProfile:any){
-
+    console.log(this.headers);
+    console.log(photoProfile);
+    
+    
     return this.http.post(
       `${environment.apiUrl}/api/profile/updatePhotoProfile`,
       photoProfile, 
-      {headers:this.headers})
+      {headers:this.headers}
+      )
+      console.log("HOLAAAA");
+      
   } 
 
   getProfile (){
