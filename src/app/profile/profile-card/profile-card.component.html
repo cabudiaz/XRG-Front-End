@@ -1,10 +1,10 @@
 <div class="row ">
     <div class="col-3 ">
-        <img class="profile-photo-size" src="../assets/img-nav/Foto-Perfil.jpg" alt="">
+        <img class="profile-photo-size" [src]="user.photoProfile" alt="">
     </div>
 
     <div class="col-9 ps-4">
-        <p class="user-profile">{{user}}</p>
+        <p class="user-profile">{{user.fullName}}</p>
         <p style="color:#818181;">Master</p>
         <div class="row mini-card-profile ms-1 pe-1">
             <div class="col-4">
