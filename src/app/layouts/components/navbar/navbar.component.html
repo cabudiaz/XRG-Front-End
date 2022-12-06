@@ -13,7 +13,7 @@
                     
                     
                     <button class="btn btn-secondary dropdown-toggle color-fondo" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img class="icono-perfil" src="profile?.photoProfile || defaultAvatar" alt="..." >
+                        <img class="icono-perfil" [src]="profile?.photoProfile || defaultAvatar" alt="..." >
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <p class="user-name">{{user.fullName}}</p>

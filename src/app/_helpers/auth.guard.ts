@@ -29,9 +29,13 @@ export class AuthGuard implements CanActivate {
       return new Promise((resolve, reject)=>{
         this.tokenService.verifyToken().subscribe({
           next: (data) => {
+            console.log("dentro de next authguard");
+            
             resolve(true);
           },
           error: (error) => {
+            console.log("dentro del error");
+            
             this.router.navigate(['/login']);
             
             
