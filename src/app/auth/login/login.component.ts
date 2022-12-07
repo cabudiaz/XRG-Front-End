@@ -11,6 +11,7 @@ import { TokenStorageService } from 'src/app/_services/token-storage.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  googleBtnText = 'signin_with';
 
   constructor(
     private fb: FormBuilder, 

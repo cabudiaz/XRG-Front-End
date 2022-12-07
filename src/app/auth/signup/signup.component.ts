@@ -10,6 +10,7 @@ import { TokenStorageService } from 'src/app/_services/token-storage.service';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
+  googleBtnText='signup_with';
 
   constructor(
     private fb: FormBuilder, private authService: AuthService, private router: Router, private tokenService: TokenStorageService) { }
