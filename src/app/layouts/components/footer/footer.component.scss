@@ -1,17 +1,15 @@
-
-
-.box-radius{
+.box-radius {
     background-color: #1d1e24;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 28px 65px;
-    
+
     border-radius: 113px;
     position: relative;
     z-index: 1;
     margin-bottom: -80px;
-    
+
 }
 
 .title-newsletter p {
@@ -23,14 +21,14 @@
 }
 
 .background-suscribe {
-/*     background-image: url("https://gestiona360.com.co/wp-content/uploads/2022/11/Background-suscribe.png"); */
-background-color: #0094d4;
-width: 100%;
-padding: 8px;
-border-radius: 25px;
-color: white;
-text-transform: uppercase;
-font-weight: 600;
+    /*     background-image: url("https://gestiona360.com.co/wp-content/uploads/2022/11/Background-suscribe.png"); */
+    background-color: #0094d4;
+    width: 100%;
+    padding: 8px;
+    border-radius: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .form-control-plaintext {
@@ -45,17 +43,18 @@ font-weight: 600;
     background-image: url("https://gestiona360.com.co/wp-content/uploads/2022/11/Footer-texture-2.jpg");
     background-size: contain;
     /* background-color: #181818; */
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .logo-footer {
     width: 120px;
 }
-.text-footer{
+
+.text-footer {
     color: white;
     font-size: 13px;
-    padding: 10px 25px;
-    text-align: justify;
+    padding: 15px 100px;
+    text-align: center;
 }
 
 .headlines-footer {
@@ -65,15 +64,21 @@ font-weight: 600;
 }
 
 .social-icons a {
-    padding: 20px 20px;
+    padding: 21px 29px 40px 29px;
     color: white;
     font-size: 24px;
 }
 
+.social-icons {
+    // padding: 20px;
+    color: white;
+    font-size: 64px;
+}
+
 .contact-icons a i {
-padding-right: 30px;
-padding-left: 30px;
-color: #0094d4;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #0094d4;
     font-size: 22px;
 }
 
@@ -87,4 +92,20 @@ color: #0094d4;
 
 .select-font-oxanium {
     font-family: 'Oxanium', cursive;
+}
+
+
+@media (max-width: 450px) {
+    .social-icons a {
+        padding: 0px 17px 35px 24px;
+        color: white;
+        font-size: 24px;
+    }
+
+    .text-footer {
+        color: white;
+        font-size: 13px;
+        padding: 10px 45px;
+        text-align: justify;
+    }
 }
