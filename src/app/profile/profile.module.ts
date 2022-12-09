@@ -12,10 +12,6 @@ import { RoutesCardsComponent } from './routes-cards/routes-cards.component';
 
 
 
-
-
-
-
 @NgModule({
   declarations: [
     ProfileComponent,
@@ -29,6 +25,9 @@ import { RoutesCardsComponent } from './routes-cards/routes-cards.component';
     CommonModule,
     ProfileRoutingModule,
     SwiperModule, 
+  ],
+  exports:[
+    ProfileCardComponent
   ],
   providers: [
    

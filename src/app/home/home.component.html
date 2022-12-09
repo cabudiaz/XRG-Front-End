@@ -1,1 +1,88 @@
-<p>home works!</p>
+<div class="home-back">
+    <div class="container">
+        <div class="row">
+            <div class="col-11 col-md-3  mt-4  pb-4">
+                <div class="row back-side pb-4">
+                    <!-- <app-profile-card class="card-profile"></app-profile-card> -->
+                    <div class="row zero-padding-right">
+                        <div class="col-3 ">
+                            <img class="profile-photo-size" [src]="profile?.photoProfile" alt="">
+                        </div>
+                    
+                        <div class="col-9 ps-4 pe-0">
+                            <p class="user-profile">{{user.fullName}}</p>
+                            <p style="color:#818181;">Master</p>
+                            <div class="row mini-card-profile ms-1 pe-1">
+                                <div class="col-4">
+                                    <div class="title-mini-card-profile">
+                                        <p>Experiencia</p> 
+                                    </div>
+                                    <div class="num-mini-card-profile">
+                                        <p>111</p>
+                                    </div>
+                    
+                                </div>
+                                <div class="col-4">
+                                    <div class="title-mini-card-profile">
+                                       <p>Posición</p> 
+                                    </div>
+                                    <div class="num-mini-card-profile">
+                                        <p>111</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="title-mini-card-profile">
+                                       <p>Seguidores</p> 
+                                    </div>
+                                    <div class="num-mini-card-profile">
+                                        <p>111</p>
+                                   </div>  
+                                </div>
+                                
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <button class="follow-button mt-4">Seguir</button>
+                </div>
+
+                
+                    <div class="row pt-4">
+                        <app-followers-list></app-followers-list>
+                    </div>
+              
+                
+                
+                </div>
+
+               
+
+
+                <div class="col-11 col-md-6 mt-2 center">
+                    
+                    <div class="row">
+                        <button class="create-post-button">
+                            <div class="back-feed-center d-flex justify-content-between ">
+                                <img class="create-post-photo " [src]="profile?.photoProfile" alt="">
+                                <p class="box-text">Cuentanos sobre tus últimas rodadas</p>
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+                        </button>
+                       
+                    
+                    </div>
+                    
+                    <div class="row">
+                        <app-stories class="ps-3 pt-4"></app-stories>
+                       
+                    
+                    </div>
+                </div>
+                <div class="col-11 col-md-3">
+                    
+                </div>
+        </div>
+        
+    </div>
+   
+</div>
