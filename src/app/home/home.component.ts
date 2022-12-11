@@ -11,6 +11,7 @@ import { TokenStorageService } from '../_services/token-storage.service';
 export class HomeComponent implements OnInit {
   user:any
   profile:any
+  defaultAvatar: string = "/assets/img-nav/avatar-default-icon.jpg"
   constructor(
     private actRoute: ActivatedRoute, 
     private authService: AuthService, 

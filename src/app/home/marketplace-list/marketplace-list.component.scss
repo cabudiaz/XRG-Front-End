@@ -1,0 +1,83 @@
+.box {
+    background-color: #1c1c1c96;
+    box-shadow: 4px 4px 6px #00000096;
+    border-radius: 5px;
+    padding: 0px 0px;
+    margin: 27px auto;
+    
+    height: 110px;
+}
+
+.first-image{
+    background-image: url("https://res.cloudinary.com/rapha-cc/image/upload/ar_16:9,c_fill,f_auto,q_auto,w_992,dpr_2.0/archive/amplience-image/H2_PDP_Assets75");
+    background-size: cover;
+}
+
+.second-image{
+    background-image: url("https://marketplacer.imgix.net/Xn/sL9ToatwstveWOrNOBdEN5vsA.jpg?auto=format&fm=pjpg&fit=max&q=90&itemprop=image&alt=Lanzamiento%20de%20la%20nueva%20bicicleta%20de%20ruta%20Trek%20Domane%202023&w=1600&h=1000&s=f243de447054a133c38a9ae59aba1c50");
+    background-size: cover;
+}
+
+.third-image{
+    background-image: url("https://www.mundobici.co/wp-content/uploads/2018/12/A.jpg");
+    background-size: cover;
+}
+
+.fourth-image{
+    background-image: url("https://trainright.com/wp-content/uploads/2019/01/Nina-Cycling-Coach-Slider-Image.jpg");
+    background-size: cover;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* ie fallback png background image */
+    z-index: 2;
+    color: white;
+    /*  padding-left: 5px;
+    padding-right: 5px; */
+}
+
+.first {
+    background: linear-gradient(30deg, rgba(17, 154, 176, 0.44) 13%, rgba(191, 179, 0, 0.38) 87%);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+}
+
+.second {
+    background: linear-gradient(30deg, rgba(255, 132, 0, 0.44) 13%, rgba(191, 0, 0, 0.38) 87%);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+}
+
+.third {
+    background: linear-gradient(30deg, rgba(138, 0, 116, 0.44) 13%, rgba(83, 206, 14, 0.38) 87%);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+}
+
+.fourth {
+    background: linear-gradient(30deg, rgba(0, 183, 255, 0.44) 13%, rgba(200, 14, 206, 0.38) 87%);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+}
+
+.overlay img {
+    margin-top: 0px;
+}
+
+.title-marketplace-item {
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.button-store {
+    font-size: 10px;
+    background-color: #8080807a;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
+}
