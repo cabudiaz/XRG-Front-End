@@ -91,29 +91,16 @@
     height: 70%;
 }
 
-.hero-description-bk {
-    background-image: linear-gradient(0deg, #0094d4, #da23e3);
-    border-radius: 30px;
-    position: absolute;
-    top: 62%;
-    left: 8px;
-    height: 65%;
-    width: 108%;
-    transform: skew(19deg, -9deg);
-}
 
-.second .hero-description-bk {
-    background-image: linear-gradient(-20deg, #bb7413, #e7d25c)
-}
 
 .hero-logo {
-    height: 50px;
-    width: 50px;
-    border-radius: 12px;
+    height: 33px;
+    width: 33px;
+    border-radius: 20px;
     background-color: #fff;
     position: absolute;
-    bottom: 32%;
-    left: 30px;
+    top: 16px;
+    left: 20px;
     overflow: hidden;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
 }
@@ -133,28 +120,11 @@
     font-family: 'Oxanium', cursive;
 }
 
-.hero-btn {
-    position: absolute;
-    color: #fff;
-    right: 64px;
-    bottom: 7%;
-    padding: 1px 20px;
-    border: 1px solid #fff;
-    z-index: 3;
-}
 
-.hero-btn a {
-    color: #fff;
-    font-size: 13px;
-    cursor: pointer;
-}
 
-.hero-date {
-    position: absolute;
-    color: #fff;
-    left: 30px;
-    bottom: 10%;
-}
+
+
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -170,3 +140,61 @@ body {
     bottom: -1px;
 
 }
+
+.hero {
+    display: inline-block;
+    position: relative;
+    /* width: 400px; */
+    min-width: 294px;
+    height: 395px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    background-position: top;
+}
+
+.overlay-story {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.54);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
+    background: rgb(39,189,211);
+    background: linear-gradient(540deg, rgba(39, 189, 211, 0) 13%, rgba(0, 0, 0, 0.45) 97%);
+    z-index:2;
+    color:white;
+}
+
+.mat-dialog-container {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.profile-name {
+    position: absolute;
+    top: 16px;
+    left: 58px;
+    font-family: 'Oxanium', cursive;
+    font-size: 12px;
+}
+
+.data-story {
+    position: absolute;
+    top: 29px;
+    left: 58px;
+    font-family: 'Oxanium', cursive;
+    font-size: 9px;
+}
+
+.story-description{
+    position: absolute;
+    bottom: 20px;
+    left: 27px;
+    font-family: 'Oxanium', cursive;
+    font-size: 11px;
+}
+
