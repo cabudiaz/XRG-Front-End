@@ -50,17 +50,32 @@ h3  {
 .best-time p {
     color: white;
     text-align: center;
-    font-size: 11px;
+    font-size: 10px;
     margin-bottom: 0px;
 }
 
 .image-profile-routes {
     width: 60px;
     margin: 0 auto 5px auto;
+    border-radius: 19px;
 }
 
 .best-rider p {
     font-size: 8px;
     line-height: 13px;
 }
+.best-rider a {
+    text-align: center;
+}
+
+.best-rider i {
+    font-size: 32px;
+    color: #029dde;
+}
+
+.best-rider i:hover {
+    
+    color:linear-gradient(0deg, #0094d4, #da23e3);;
+}
+
            

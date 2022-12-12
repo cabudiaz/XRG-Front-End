@@ -40,8 +40,8 @@
     display: inline-block;
     position: relative;
     /* width: 400px; */
-    min-width: 215px;
-    height: 350px;
+    min-width: 170px;
+    height: 257px;
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
@@ -63,20 +63,35 @@
     transform: skew(19deg, -9deg);
 }
 
+.hero-description-bk-w {
+    background-image: linear-gradient(0deg, #0094d4, #da23e3);
+    border-radius: 30px;
+    position: absolute;
+    top: 54%;
+    left: 0px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+}
+
 .second .hero-description-bk {
     background-image: linear-gradient(-20deg, #bb7413, #e7d25c)
 }
 
 .hero-logo {
-    height: 50px;
-    width: 50px;
-    border-radius: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
     background-color: #fff;
     position: absolute;
     bottom: 32%;
     left: 30px;
     overflow: hidden;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.little-bottom{
+    bottom: 89px;
 }
 
 .hero-logo img {
@@ -87,34 +102,63 @@
     position: absolute;
     color: #fff;
     font-weight: 700;
-    left: 0px;
+    left: 3px;
     right: 0px;
-    bottom: 15%;
-    font-size: 12px;
+    bottom: 13%;
+    font-size: 10px;
     font-family: 'Oxanium', cursive;
+    line-height: 14px;
+    width: 95%;
+}
+
+.hero-description-w {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    left: 19px;
+    right: 0px;
+    bottom: 9%;
+    font-size: 10px;
+    font-family: 'Oxanium', cursive;
+    line-height: 14px;
+    width: 90%;
 }
 
 .hero-btn {
     position: absolute;
     color: #fff;
-    right: 64px;
-    bottom: 7%;
-    padding: 1px 20px;
+    right: 19px;
+    bottom: 6%;
+    padding: 1px 9px;
     border: 1px solid #fff;
+    line-height: 15px;
 }
 
 .hero-btn a {
     color: #fff;
-    font-size: 13px;
+    font-size: 10px;
     cursor: pointer;
 }
 
 .hero-date {
     position: absolute;
-    color: #fff;
-    left: 30px;
-    bottom: 10%;
+    color: rgb(170, 170, 170);
+    left: 29px;
+    bottom: 15.7px;
 }
+
+.hero-date-w {
+    position: absolute;
+    color: rgb(170, 170, 170);
+    left: 206px;
+    bottom: 15.7px;
+}
+
+.mat-dialog-container {
+    padding: 0px!important;
+    border-radius: 33px!important;
+}
+
 
 body {
     font-family: 'Open Sans', sans-serif;

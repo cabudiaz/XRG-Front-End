@@ -16,6 +16,7 @@ export class PublicationsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getProfile();
   }
 
   getProfile () {

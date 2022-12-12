@@ -1,6 +1,6 @@
 <div class="row ">
     <div class="col-3 ">
-        <img class="profile-photo-size" [src]="profile?.photoProfile" alt="">
+        <img class="profile-photo-size" [src]="profile?.photoProfile || defaultAvatar" alt="">
     </div>
 
     <div class="col-9 ps-4">

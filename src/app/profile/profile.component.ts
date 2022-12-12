@@ -12,25 +12,23 @@ import { TokenStorageService } from '../_services/token-storage.service';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-  
+  profile:any
 
   constructor(
     private tokenService: TokenStorageService,
+    
   ) {}
   
 
   ngOnInit(): void {
   
-
+   
   }
-
-
-  
-
-
 
   
   
   }
+
+
 
 

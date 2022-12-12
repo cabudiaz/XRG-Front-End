@@ -4,13 +4,12 @@
     border-radius: 5px;
     padding: 0px 0px;
     margin: 27px auto;
-    border-top: 40px solid rgb(53, 53, 53);
-    height: 110px;
+    border-top: 40px solid rgb(15, 15, 15);
 }
 
 .head-publication {
     margin-top: -32px;
-   
+
 }
 
 .title {
@@ -18,16 +17,58 @@
     font-size: 12px;
     color: white;
     margin-top: -4px;
+    font-family: calibri;
+    font-weight: 600;
 }
+
 .date {
     margin-top: -5px;
     font-size: 9px;
     color: white;
+    font-family: calibri;
 }
 
-.box img {
+.head-publication img {
     margin-right: 10px;
     width: 25px;
     margin-left: 12px;
     border-radius: 64px;
+}
+
+.route-image {
+    margin-top: -8px;
+}
+
+.route-data {
+    background-color: #d5d5d5;
+    background-image: url("/assets/img-profile/fondo-profile.jpg");
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0 0 5px 5px;
+    border-top: 2px solid #353535;
+    background-position: bottom;
+}
+
+.title-route {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.title-result-route {
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.result-route {
+    text-align: center;
+    color: white;
+}
+
+.vertical {
+    border-left: 1px solid #b9b9b9;
+    height: 42px;
 }

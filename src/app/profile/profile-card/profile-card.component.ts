@@ -10,6 +10,7 @@ import { TokenStorageService } from '../../_services/token-storage.service';
 export class ProfileCardComponent implements OnInit {
   user:any
   profile:any
+  defaultAvatar: string = "/assets/img-nav/avatar-default-icon.jpg"
   constructor(
     private tokenService: TokenStorageService,
     private profileService: ProfileService,
