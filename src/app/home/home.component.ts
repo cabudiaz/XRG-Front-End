@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       console.log(params);
       this.authService.sendStravaData(params).subscribe({
         next: (data) => {
-          console.log(data);
+         /*  console.log(data); */
 
         },
         error: (error) => {
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     this.profileService.getProfile().subscribe ({
       next:(response:any)=>{
         this.profile = response.data
-       console.log(response.data);
+       /* console.log(response.data); */
        
         
       },
