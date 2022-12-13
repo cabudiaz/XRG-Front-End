@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { TokenStorageService } from './token-storage.service';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class AuthService {headers = new HttpHeaders({
+  token: this.tokenService.getToken!,
+})
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private tokenService: TokenStorageService) { }
   signup(account: any) {
     console.log('Funciona este servicio');
     console.log(environment.apiUrl);
@@ -16,7 +19,7 @@ export class AuthService {
   }
 
   sendStravaData (dataClient:any){
-    return this.http.post(`${environment.apiUrl}/api/strava/updateDataStrava`, dataClient);
+    return this.http.post(`${environment.apiUrl}/api/strava/updateDataStrava`, dataClient,{headers:this.headers});
   }
 
   login(account: any) {
