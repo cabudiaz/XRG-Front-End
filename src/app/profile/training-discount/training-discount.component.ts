@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Pagination } from "swiper";
+import { ChallengeService } from 'src/app/_services/challenge.service';
 
 SwiperCore.use([Pagination]);
 
@@ -12,8 +13,8 @@ SwiperCore.use([Pagination]);
   encapsulation: ViewEncapsulation.None,
 })
 export class TrainingDiscountComponent implements OnInit {
-
-  constructor(public dialog: MatDialog) { }
+  challenges:any
+  constructor(public dialog: MatDialog, private challengeService: ChallengeService) { }
 
   openDialog() {
     const dialogRef = this.dialog.open(DescriptionTrainingDiscount);
@@ -23,7 +24,24 @@ export class TrainingDiscountComponent implements OnInit {
     });
   }
 
+
+
   ngOnInit(): void {
+    this.challengeService.getChallengeCards().subscribe(
+      {
+        next: (data:any)=>{
+          console.log(data);
+          this.challenges= data.res
+
+          
+          
+        },
+        error:(error)=>{
+          console.log(error);
+          
+        }
+        
+      });
   }
 
 }

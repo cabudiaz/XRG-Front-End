@@ -1,17 +1,18 @@
-<div class="row box first-image ">
-    <div class="overlay first  ">
-        <p class="title-marketplace-item ">¡Prepárate para tu próximo reto!</p>
-        <img class="d-inline" src="https://img.freepik.com/vector-premium/diseno-plano-insignia-bicicleta-montana_215665-118.jpg?w=740" alt="">
-        <p class="d-inline">Jersey Cycling Store</p>
+
+<div *ngFor="let ad of ads" class="row box {{ad.classImg}} ">
+    <div class="overlay {{ad.classBack}}  ">
+        <p class="title-marketplace-item ">{{ad.title}}</p>
+        <img class="d-inline" [src]="ad.logoImgCustomer" alt="">
+        <p class="d-inline">{{ad.customerAdsName}}</p>
         <div class=" d-flex justify-content-end"> 
-            <a class="button-store">Ver tienda</a>
+            <a class="button-store">{{ad.callToAction}}</a>
         </div>    
     </div>
 </div>
 
 
 
-<div class="row box second-image ">
+<!-- <div class="row box second-image ">
     <div class="overlay second  ">
         <p class="title-marketplace-item ">Encuentra todo para tu bici</p>
         <img class="d-inline" src="https://img.freepik.com/vector-premium/vector-bicicleta-montana_25327-99.jpg?w=740" alt="">
@@ -46,4 +47,4 @@
             <a class="button-store">Más info</a>
         </div>
     </div>
-</div>
+</div> -->

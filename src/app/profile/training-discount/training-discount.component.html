@@ -24,7 +24,7 @@
 }"
 class="mySwiper">
 
-<ng-template swiperSlide>
+<!-- <ng-template swiperSlide>
 <div class="first hero">
   <img class="hero-profile-img" src="../assets/img-profile/challenge-2.jpg" alt="">
   <div class="hero-description-bk"></div>
@@ -41,17 +41,17 @@ class="mySwiper">
       <a mat-button (click)="openDialog()">Ver más</a>
   </div>
 </div>  
-</ng-template>
+</ng-template> -->
 
-<ng-template swiperSlide>
+<ng-template *ngFor="let challenge of challenges" swiperSlide>
     <div class="first hero">
-      <img class="hero-profile-img" src="../assets/img-profile/challenge-3-a.jpg" alt="">
+      <img class="hero-profile-img" [src]="challenge.imageChallengeCard" alt="">
       <div class="hero-description-bk"></div>
       <div class="hero-logo">
-          <img src="https://t4.ftcdn.net/jpg/01/41/92/53/360_F_141925349_0f8dRfyXYXZGfJMweUa5VWuZ2H4kDj94.jpg" alt="">
+          <img [src]="challenge.logoImgChallenge" alt="">
       </div>
       <div class="hero-description">
-          <p>¿Como están tus piernas para 1000 kilómetros este mes?</p>
+          <p>{{challenge.descriptionSmall}}</p>
       </div>
       <div class="hero-date">
         <i class="fa-solid fa-trophy"></i>
@@ -62,7 +62,7 @@ class="mySwiper">
     </div>  
     </ng-template>
 
-    <ng-template swiperSlide>
+   <!--  <ng-template swiperSlide>
         <div class="first hero">
           <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
           <div class="hero-description-bk"></div>
@@ -99,7 +99,7 @@ class="mySwiper">
               </div>
             </div>  
             </ng-template>
-
+ -->
 
 
 </swiper>
