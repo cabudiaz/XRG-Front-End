@@ -1,10 +1,14 @@
-import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
-import { SwiperComponent } from "swiper/angular";
+import { Component, OnInit, ViewEncapsulation,Inject } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import SwiperCore, { Pagination } from "swiper";
 import { ChallengeService } from 'src/app/_services/challenge.service';
 
 SwiperCore.use([Pagination]);
+// export interface DialogData {
+//   mageChallengeDescription: string;
+//   logoImgChallenge: string;
+//   descriptionLong: string;
+// }
 
 @Component({
   selector: 'app-training-discount',
@@ -13,14 +17,21 @@ SwiperCore.use([Pagination]);
   encapsulation: ViewEncapsulation.None,
 })
 export class TrainingDiscountComponent implements OnInit {
-  challenges:any
+  challenges:any;
+  // imageChallengeDescription: string;
+  // logoImgChallenge: string;
+  // descriptionLong: string,
   constructor(public dialog: MatDialog, private challengeService: ChallengeService) { }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(DescriptionTrainingDiscount);
-
+  openDialog(imageChallengeDescription:string,logoImgChallenge:string, descriptionLong:string) {
+  console.log(imageChallengeDescription);
+    const dialogRef = this.dialog.open(DescriptionTrainingDiscount,{
+    data: {imageChallengeDescription,logoImgChallenge, descriptionLong},
+  });
+  
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      console.log('Dialog result');
+// this.openDialog= result
     });
   }
 
@@ -49,4 +60,16 @@ export class TrainingDiscountComponent implements OnInit {
   selector: 'description-training-discount',
   templateUrl: './description-training-discount.html',
 })
-export class DescriptionTrainingDiscount {}
+export class DescriptionTrainingDiscount {
+  constructor(
+    public dialogRef: MatDialogRef<DescriptionTrainingDiscount>,
+    @Inject(MAT_DIALOG_DATA) public data:any,
+  ) {}
+
+  ngOnInit(): void {
+    console.log(this.data);
+    }
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}

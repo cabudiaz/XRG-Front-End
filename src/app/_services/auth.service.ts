@@ -25,4 +25,8 @@ export class AuthService {headers = new HttpHeaders({
   login(account: any) {
     return this.http.post(`${environment.apiUrl}/api/auth/login`, account);
   }
+
+  googleLogin(googleAccount:any){
+    return this.http.post(`${environment.apiUrl}/api/auth/googleLogin`, googleAccount)
+  }
 }
