@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from 'src/app/_services/profile.service';
 
 import {Chart, registerables} from 'node_modules/chart.js';
 Chart.register(...registerables);
@@ -9,18 +10,45 @@ Chart.register(...registerables);
   styleUrls: ['./performance.component.scss']
 })
 export class PerformanceComponent implements OnInit {
+  profile:any
 
-  constructor() { }
+  
+  
+  constructor(
+    private profileService: ProfileService,
+  ) { }
+  
 
   ngOnInit(): void {
     this.RenderChart();
+    this.getProfile();
+   
+    
   }
+ 
+    getProfile () {
+      this.profileService.getProfile().subscribe ({
+        next:(response:any)=>{
+          this.profile = response.data
+         
+         
+          
+        },
+        error:(error)=>{
+          console.log(error);
+          
+        }
+      })
+    }
+  
 
   /* RenderChart */
 
 
   RenderChart(){
-
+    
+    console.log(this.profile?.performance);
+    
     const data = {
       labels: [
         'Montaña',

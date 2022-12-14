@@ -2,6 +2,7 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Pagination } from "swiper";
+import { StoryService } from 'src/app/_services/story.service';
 
 SwiperCore.use([Pagination]);
 @Component({
@@ -12,8 +13,8 @@ SwiperCore.use([Pagination]);
 
 })
 export class StoriesComponent implements OnInit {
-
-  constructor(public dialog: MatDialog) { }
+  stories:any
+  constructor(public dialog: MatDialog, private storyService: StoryService) { }
 
   openStory() {
     const dialogRef = this.dialog.open(storyDialog);
@@ -24,6 +25,23 @@ export class StoriesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.storyService.getStories().subscribe(
+      {
+        next: (data:any)=>{
+          console.log(data);
+          this.stories= data.res
+                   
+          
+        },
+        error:(error)=>{
+          console.log(error);
+          
+        }
+        
+      });
+      console.log(this.stories);
+
   }
 
 }

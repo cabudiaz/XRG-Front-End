@@ -16,9 +16,7 @@ export class MarketplaceListComponent implements OnInit {
         next: (data:any)=>{
           console.log(data);
           this.ads= data.res
-          
-          
-          
+                   
           
         },
         error:(error)=>{
@@ -27,7 +25,7 @@ export class MarketplaceListComponent implements OnInit {
         }
         
       });
-      console.log(this.ads);
+      
   }
 
 }
