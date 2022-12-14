@@ -18,12 +18,12 @@ export class RoutesCardsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProfile();
-
     this.routeService.getRoutes().subscribe(
       {
         next: (data:any)=>{
-          console.log(data);
+          
           this.routes= data.res
+                   console.log(this.routes);
                    
           
         },
@@ -35,7 +35,12 @@ export class RoutesCardsComponent implements OnInit {
       });
       console.log(this.routes);
 
+    
+
   }
+
+ 
+  
 
   getProfile () {
     this.profileService.getProfile().subscribe ({
