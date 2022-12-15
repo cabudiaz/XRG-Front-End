@@ -25,7 +25,7 @@ export class ProfileCardComponent implements OnInit {
     this.profileService.getProfile().subscribe ({
       next:(response:any)=>{
         this.profile = response.data
-       console.log(this.profile);
+       /* console.log(this.profile); */
        
         
       },

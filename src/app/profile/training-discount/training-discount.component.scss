@@ -176,22 +176,3 @@ body {
 
 }
 
-@media (max-width: 770px) {}
-
-
-@media (max-width: 450px) {
-    .swiper-slide img {
-        width: 122%;
-        height: 103%;
-    }
-
-    .hero {
-        width: 377px;
-        min-width: 121px;
-        height: 229px;
-        border-radius: 30px;
-        overflow: hidden;
-        box-shadow: 5px 5px 30px rgb(0 0 0 / 30%);
-        margin: -10px;
-    }
-}

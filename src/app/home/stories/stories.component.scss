@@ -53,6 +53,12 @@
     /* background-image: url("https://hubsports.mx/wp-content/uploads/2018/11/lo-que-debes-saber-antes-de-practicar-ciclismo-de-ruta.jpg"); */
     background-size: cover;
     background-color: #eee;
+    background-position: center;
+}
+
+.dateStory {
+    margin-top: -11px!important; 
+    margin-left: 11px!important;
 }
 .button-story {
     width: 100px;
@@ -72,12 +78,14 @@
     background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
     z-index:2;
     color:white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .overlay img {
     width: 24px;
     height: 24px;
-    margin-left: 0px;
+    margin-left: 5px;
     margin-top: 8px;
     border-radius: 30px;
     margin-right: 3px;
@@ -85,6 +93,8 @@
 
 .overlay p {
     font-size: 8px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .hero-profile-img {
@@ -193,8 +203,18 @@ body {
 .story-description{
     position: absolute;
     bottom: 20px;
-    left: 27px;
+    left: 15px;
     font-family: 'Oxanium', cursive;
     font-size: 11px;
+}
+
+@media (max-width: 450px) {
+    .hero {
+        min-width: 260px;
+    }
+    .overlay {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 

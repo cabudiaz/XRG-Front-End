@@ -72,3 +72,12 @@
     border-left: 1px solid #b9b9b9;
     height: 42px;
 }
+
+@media (max-width: 450px) {
+    .date {
+        margin-left: 13px;
+    }
+    .title {
+        margin-left: 12px;
+    }
+}

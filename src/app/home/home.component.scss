@@ -148,3 +148,10 @@
         max-width: 1250px !important;
     }
 }
+
+
+@media (max-width: 450px) {
+.hide{
+    display: none;
+}
+}
