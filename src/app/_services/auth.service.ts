@@ -13,8 +13,8 @@ export class AuthService {headers = new HttpHeaders({
 
   constructor(private http: HttpClient,private tokenService: TokenStorageService) { }
   signup(account: any) {
-    console.log('Funciona este servicio');
-    console.log(environment.apiUrl);
+    /* console.log('Funciona este servicio');
+    console.log(environment.apiUrl); */
     return this.http.post(`${environment.apiUrl}/api/accounts/newAccount`, account);
   }
 

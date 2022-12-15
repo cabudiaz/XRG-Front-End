@@ -24,13 +24,13 @@ export class TrainingDiscountComponent implements OnInit {
   constructor(public dialog: MatDialog, private challengeService: ChallengeService) { }
 
   openDialog(imageChallengeDescription:string,logoImgChallenge:string, descriptionLong:string) {
-  console.log(imageChallengeDescription);
+  /* console.log(imageChallengeDescription); */
     const dialogRef = this.dialog.open(DescriptionTrainingDiscount,{
     data: {imageChallengeDescription,logoImgChallenge, descriptionLong},
   });
   
     dialogRef.afterClosed().subscribe(result => {
-      console.log('Dialog result');
+      /* console.log('Dialog result'); */
 // this.openDialog= result
     });
   }
@@ -41,7 +41,7 @@ export class TrainingDiscountComponent implements OnInit {
     this.challengeService.getChallengeCards().subscribe(
       {
         next: (data:any)=>{
-          console.log(data);
+          /* console.log(data); */
           this.challenges= data.res
 
           

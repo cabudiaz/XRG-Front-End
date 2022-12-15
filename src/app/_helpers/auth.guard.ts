@@ -29,7 +29,7 @@ export class AuthGuard implements CanActivate {
       return new Promise((resolve, reject)=>{
         this.tokenService.verifyToken().subscribe({
           next: (data) => {
-            console.log("dentro de next authguard");
+            /* console.log("dentro de next authguard"); */
             
             resolve(true);
           },

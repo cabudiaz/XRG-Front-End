@@ -14,7 +14,7 @@ export class MarketplaceListComponent implements OnInit {
     this.adsService.getAdsCards().subscribe(
       {
         next: (data:any)=>{
-          console.log(data);
+         /*  console.log(data); */
           this.ads= data.res
                    
           

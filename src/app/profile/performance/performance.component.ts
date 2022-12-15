@@ -11,7 +11,7 @@ Chart.register(...registerables);
 })
 export class PerformanceComponent implements OnInit {
   profile:any
-
+  performance:any
   
   
   constructor(
@@ -20,9 +20,10 @@ export class PerformanceComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.RenderChart();
     this.getProfile();
    
+    
+    
     
   }
  
@@ -30,6 +31,12 @@ export class PerformanceComponent implements OnInit {
       this.profileService.getProfile().subscribe ({
         next:(response:any)=>{
           this.profile = response.data
+          this.performance = response.data.performance
+          /* console.log(this.performance); */
+          this.RenderChart();
+          
+         /*  console.log(this.profile); */
+          
          
          
           
@@ -47,7 +54,7 @@ export class PerformanceComponent implements OnInit {
 
   RenderChart(){
     
-    console.log(this.profile?.performance);
+   /*  console.log(this.profile?.performance); */
     
     const data = {
       labels: [
@@ -60,7 +67,7 @@ export class PerformanceComponent implements OnInit {
       ],
       datasets: [{
         label: 'Rendimiento',
-        data: [65, 59, 90, 81, 56, ],
+        data: this.performance,
         fill: true,
         backgroundColor: '#ea20fe3b',
         borderColor: '#880995b3',

@@ -20,12 +20,12 @@ export class HomeComponent implements OnInit {
      ) { }
 
   ngOnInit(): void {
-    console.log("intro on Init Home");
+  /*   console.log("intro on Init Home"); */
     this.user=this.tokenService.getUser();
     this.getProfile();
     
     this.actRoute.queryParams.subscribe((params) => {
-      console.log(params);
+      /* console.log(params); */
       this.authService.sendStravaData(params).subscribe({
         next: (data) => {
          /*  console.log(data); */

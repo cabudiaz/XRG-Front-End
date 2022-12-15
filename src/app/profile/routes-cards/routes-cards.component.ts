@@ -23,7 +23,7 @@ export class RoutesCardsComponent implements OnInit {
         next: (data:any)=>{
           
           this.routes= data.res
-                   console.log(this.routes);
+                   /* console.log(this.routes); */
                    
           
         },
@@ -33,7 +33,7 @@ export class RoutesCardsComponent implements OnInit {
         }
         
       });
-      console.log(this.routes);
+    /*   console.log(this.routes); */
 
     
 
@@ -46,7 +46,7 @@ export class RoutesCardsComponent implements OnInit {
     this.profileService.getProfile().subscribe ({
       next:(response:any)=>{
         this.profile = response.data
-       console.log(response.data);
+       /* console.log(response.data); */
        
         
       },

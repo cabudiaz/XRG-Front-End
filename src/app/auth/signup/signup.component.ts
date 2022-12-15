@@ -26,13 +26,13 @@ export class SignupComponent implements OnInit {
 
   onSubmit(): void {
     if (this.form.valid) {
-      console.log("Form Valido");
-      console.log(this.form.value);
+     /*  console.log("Form Valido");
+      console.log(this.form.value); */
       this.authService.signup(this.form.value).subscribe({
         next: (data:any) => {
           console.log(data.token);
           this.tokenService.saveToken(data.token)
-          console.log(data);
+          /* console.log(data); */
           window.location.href = "http://www.strava.com/oauth/authorize?client_id=71959&response_type=code&redirect_uri=http://localhost:4200&approval_prompt=force&scope=read_all,profile:read_all,activity:read_all"
 
 /*           this.router.navigate(['../login'])*/
