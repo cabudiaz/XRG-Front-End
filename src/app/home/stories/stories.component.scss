@@ -36,20 +36,20 @@
 
 
 /*Tarjeta*/
-.swiper-slide{
-    width: 101px!important;
+.swiper-slide {
+    width: 101px !important;
 }
 
 .story {
     display: inline-block;
     position: relative;
-    
+
     min-width: 105px;
     height: 149px;
     border-radius: 11px;
     overflow: hidden;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-    
+
     /* background-image: url("https://hubsports.mx/wp-content/uploads/2018/11/lo-que-debes-saber-antes-de-practicar-ciclismo-de-ruta.jpg"); */
     background-size: cover;
     background-color: #eee;
@@ -57,9 +57,10 @@
 }
 
 .dateStory {
-    margin-top: -11px!important; 
-    margin-left: 11px!important;
+    margin-top: -11px !important;
+    margin-left: 11px !important;
 }
+
 .button-story {
     width: 100px;
     padding: 0px;
@@ -69,15 +70,20 @@
 }
 
 .overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:rgba(0, 0, 0, 0.54);
-    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
-    z-index:2;
-    color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.54);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+    /* ie fallback png background image */
+    z-index: 2;
+    color: white;
+
+}
+
+.slider-story {
     display: flex;
     flex-wrap: wrap;
 }
@@ -165,17 +171,18 @@ body {
 }
 
 .overlay-story {
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:rgba(0, 0, 0, 0.54);
-    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9; /* ie fallback png background image */
-    background: rgb(39,189,211);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.54);
+    background: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAATSURBVBhXY2RgYNgHxGAAYuwDAA78AjwwRoQYAAAAAElFTkSuQmCC) repeat scroll transparent\9;
+    /* ie fallback png background image */
+    background: rgb(39, 189, 211);
     background: linear-gradient(540deg, rgba(39, 189, 211, 0) 13%, rgba(0, 0, 0, 0.45) 97%);
-    z-index:2;
-    color:white;
+    z-index: 2;
+    color: white;
 }
 
 .mat-dialog-container {
@@ -200,7 +207,7 @@ body {
     font-size: 9px;
 }
 
-.story-description{
+.story-description {
     position: absolute;
     bottom: 20px;
     left: 15px;
@@ -212,9 +219,9 @@ body {
     .hero {
         min-width: 260px;
     }
+
     .overlay {
         display: flex;
         flex-wrap: wrap;
     }
 }
-
