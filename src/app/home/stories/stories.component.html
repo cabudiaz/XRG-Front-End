@@ -15,7 +15,31 @@
   }
 }" class="mySwiper">
 
-    <ng-template swiperSlide>
+    <ng-template *ngFor="let story of stories" swiperSlide>
+        <button class="button-story" (click)="openStory(story.descriptionStory,story.imageStory,story.photoProfile,story.profileName)">
+            <div class="first story"
+                style="background-image: url('{{story.imageStory}}');">
+
+                <div class="overlay ">
+
+                    <img class="d-inline"
+                        [src]="story.photoProfile"
+                        alt="">
+
+                    <p class="d-inline">{{story.profileName}}</p>
+                    <p style="margin-top: -11px; margin-left: -7px;">Hace 1m</p>
+                    <p style="color: transparent;"  class="">{{story.descriptionStory}}</p>
+
+
+                </div>
+
+
+            </div>
+        </button>
+
+    </ng-template>
+
+    <!-- <ng-template swiperSlide>
         <button class="button-story" (click)="openStory()">
             <div class="first story"
                 style="background-image: url('https://hubsports.mx/wp-content/uploads/2018/11/lo-que-debes-saber-antes-de-practicar-ciclismo-de-ruta.jpg');">
@@ -62,29 +86,6 @@
     </ng-template>
 
     <ng-template swiperSlide>
-        <button class="button-story" (click)="openStory()">
-            <div class="first story"
-                style="background-image: url('https://hubsports.mx/wp-content/uploads/2018/11/lo-que-debes-saber-antes-de-practicar-ciclismo-de-ruta.jpg');">
-
-                <div class="overlay ">
-
-                    <img class="d-inline"
-                        src="https://e1.pxfuel.com/desktop-wallpaper/1013/308/desktop-wallpaper-strava-pro-cyclist-profile-egan-bernal-thumbnail.jpg"
-                        alt="">
-
-                    <p class="d-inline">Ricardo Chamarra</p>
-                    <p style="margin-top: -11px; margin-left: -7px;">Hace 1m</p>
-
-
-                </div>
-
-
-            </div>
-        </button>
-
-    </ng-template>
-
-    <ng-template swiperSlide>
         <div class="first story">
 
             <div class="hero-btn">
@@ -119,7 +120,7 @@
             </div>
         </div>
     </ng-template>
-
+ -->
 
 
 </swiper>
