@@ -1,36 +1,37 @@
 @import "~swiper/css";
 @import "~swiper/css/pagination";
+
 .swiper {
-  width: 100%;
-  height: 100%;
-  
+    width: 100%;
+    height: 100%;
+
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* background: #fff; */
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -166,9 +167,31 @@ body {
     background-color: #eee;
     min-height: 100vh;
 }
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     bottom: -1px;
-    
+
 }
 
+@media (max-width: 770px) {}
 
+
+@media (max-width: 450px) {
+    .swiper-slide img {
+        width: 122%;
+        height: 103%;
+    }
+
+    .hero {
+        width: 377px;
+        min-width: 121px;
+        height: 229px;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 5px 5px 30px rgb(0 0 0 / 30%);
+        margin: -10px;
+    }
+}
